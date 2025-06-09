@@ -21,6 +21,7 @@ services:
     network_mode: host
     volumes:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./telegraf.d/:/etc/telegraf/telegraf.d/
     depends_on:
       - influxdb
     # entrypoint : this ensure Mosquitto server is up and ready to accept a new connection
