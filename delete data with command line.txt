@@ -1,0 +1,4 @@
+curl -X POST "http://192.168.1.14:8086/api/v2/delete?org=myorg&bucket=fishesp32" \
+-H "Authorization: Token esW6aZBMP109IojHTuflSnmtLzEz-1tmKX7TKEWPUnkcOkZcVs1vBfr_xVPs3UECH53l_1bVOnjD9tmD3BsMUg==" \
+-H "Content-Type: application/json" \
+-d '{"start":"2025-06-08T11:13:01Z","stop":"2025-06-08T17:00:00Z","predicate":"_measurement=\"mqtt_consumer\""}'
